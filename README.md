@@ -22,7 +22,7 @@ Romy Jongkees
 Blauw
 
 #### Je focus:
-Responsive plane
+Surface plane
  
 </details>
 
