@@ -1,0 +1,153 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;
+  margin: 0;
+  list-style-type: none;
+}
+
+/*************************/
+/* custom CSS properties */
+/*************************/
+
+:root {
+  --red-color: #b40019;
+  --font-roboto: 'Roboto Slab', sans-serif;
+}
+
+/*************/
+/* navigatie */
+/*************/
+
+nav {
+  display: flex;
+  position: fixed;
+
+  height:3em;
+  position: sticky;
+
+  background-color: black;
+}
+
+nav a:first-of-type {
+  display: flex;
+  position: absolute;
+
+  height: 3em;
+  length: auto;
+  
+  padding-right: .5em;
+}
+
+nav p {
+  display: flex;
+  position: absolute;
+  left: 5em;
+
+  color: white;
+  font-family: var(--font-roboto);
+  font-size: .8em;
+  align-self: center;
+}
+
+nav a:nth-of-type(2) {
+  display: flex;
+  position: absolute;
+  left: 10em;
+
+  height: 35px;
+  length: auto;
+
+  align-self: center;
+  vertical-align: baseline;
+  
+}
+
+nav a:nth-of-type(3) {
+  display: flex;
+  position: absolute;
+  right: 2em;
+
+  height: 2em;
+  length: auto;
+
+  
+
+  align-self: center;
+
+  margin: 0 20px 0 10px;
+}
+
+nav a:nth-of-type(4) {
+  display: flex;
+  position: absolute;
+  right: 0;
+
+  height: 2em;
+  length: auto;
+
+  align-self: center;
+
+  margin: 0 10px 0 10px;
+
+  
+}
+
+/*************/
+/* zoekbalk */
+/*************/
+
+nav:nth-of-type(2) {
+  background-color: var(--red-color);
+}
+
+form {
+
+}
+
+nav:nth-of-type(2) a {
+  height: 2em;
+  length: auto;
+}
+
+/*************/
+/*   main    */
+/*************/
+
+/*************/
+/* section 1  */
+/*************/
+
+main section:first-of-type {
+  display: relative;
+
+  background-color: black;
+
+  height: 282px;
+}
+
+main section:first-of-type h2 {
+  position: absolute;
+  top: 5em;
+
+  color: white;
+  font-family: var(--font-roboto);
+  font-size: 2em;
+
+}
+
+main section:first-of-type h3 {
+  position: absolute;
+
+  color: white;
+  font-family: var(--font-roboto);
+
+  font-size:
+}
+
+main section:first-of-type img:first-of-type {
+  position: absolute;
+
+  height: 35px;
+
+  align-self: center;
+}
