@@ -109,7 +109,10 @@ nav form {
   display: flex;
   min-width: 10em;
   margin-top: 3em;
+  margin-right: 1.5em;
   height: 3.1em;
+
+  flex-grow: 1;
 }
 
 nav form a img {
@@ -126,12 +129,15 @@ nav form input {
   position: absolute;
   top: .8em;
   left: 1em;
+  right: 1em;
 
   height: 2em;
-  width: 28em;
+  width: 100%;
   padding: 1em;
 
   border: 0;
+
+  flex-grow: 1;
 }
 
 nav:nth-of-type(2) a {
