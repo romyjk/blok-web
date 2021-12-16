@@ -22,18 +22,3 @@ function hideMenu() {
 }
 
 sluitHamburgerMenu.addEventListener("click", hideMenu);
-
-/* uitklap menu */
-
-/* e-mailnieuwsbrief */
-
-/* uitklappen */
-
-var buttonUitklapMenu = document.querySelector("footer section:nth-of-type(2) ul:nth-of-type(2) li:first-of-type img");
-var uitklapMenu = document.querySelector("footer section:nth-of-type(2) ul:nth-of-type(2)");
-
-function showUitklapMenu() {
-    uitklapMenu.classList.add("show");
-}
-
-buttonUitklapMenu.addEventListener("click", showUitklapMenu);
