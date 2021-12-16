@@ -1,0 +1,1434 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;
+  margin: 0;
+  list-style-type: none;
+}        
+
+:focus {
+  border: 1px solid var(--red-color);
+}
+
+/*************************/
+/* custom CSS properties */
+/*************************/
+
+:root {
+  --red-color: #b40019;
+  --black-color: #000000;
+  --green-color: #006d1c;
+  --gray-color: #666;
+  --light-gray-color: rgb(179, 179, 179);
+  --even-lighter-gray: lightgray;
+  --white-color: #ffffff;
+  --dark-green-color: #003c00;
+
+  --font-roboto: 'Roboto Slab', sans-serif;
+  --font-open-sans: 'Open Sans', sans-serif;
+}
+
+/*************/
+/* navigatie */
+/*************/
+
+header {
+  width: 100%;
+}
+
+header nav:first-of-type {
+  display: flex;
+  flex-wrap: nowrap;
+
+  position: fixed;
+  background-color: black;
+  height: 3em;
+  width: 100%;
+  top: 0;
+
+  z-index: 100;
+}
+
+header nav:first-of-type ul:first-of-type {
+  display: flex;
+
+  width: 100%;
+
+  padding: 0;
+  margin: 0;
+}
+
+header nav:first-of-type ul:first-of-type li:first-of-type button {
+  display: flex;
+  background-color: var(--black-color);
+  border: none;
+}
+
+header nav:first-of-type ul:first-of-type li:first-of-type button img {
+  height: 3em;
+  margin-top: .2em;
+
+  justify-content: flex-start;
+}
+
+header nav:first-of-type ul:first-of-type li:first-of-type p {
+  font-family: var(--font-roboto);
+  font-size: 1em;
+  
+  color: white;
+  
+  margin-top: 1em;
+  margin-left: 1em;
+  
+}
+
+header nav:first-of-type ul:first-of-type li:nth-of-type(2) a img {
+  height: 2.5em;
+  margin-top: .3em;
+
+  
+}
+
+header nav:first-of-type ul:first-of-type li:nth-of-type(2) {
+  margin: 0 auto;
+}
+
+header nav:first-of-type ul:first-of-type li:nth-of-type(3) a img {
+  height: 2em;
+  margin-top: .5em;
+}
+
+header nav:first-of-type ul:first-of-type li:nth-of-type(4) img {
+  height: 2em;
+  margin-top: .5em;
+  margin-left: 1em;
+  margin-right: 1em;
+
+  justify-self: baseline;
+}
+
+header nav:first-of-type ul:first-of-type li:nth-of-type(4) {
+  justify-self: baseline;
+}
+
+/******************/
+/* hamburger menu */
+/******************/
+
+header nav:first-of-type ul:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+
+  background-color: black;
+  position: fixed;
+  width: 20em;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  transition: 1s;
+
+  margin-left: -20em;
+}
+
+header nav:first-of-type ul:nth-of-type(2).menu {
+  margin-left: 0;
+}
+
+header nav:first-of-type ul:nth-of-type(2) li {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: var(--font-roboto);
+  margin-left: 0.5em;
+  border: 0;
+  height: 1em;
+}
+
+header nav:first-of-type ul:nth-of-type(2) li:nth-last-of-type(1) {
+  display: flex;
+  gap: 1em;
+}
+
+header nav:first-of-type ul:nth-of-type(2) li:nth-last-of-type(1) p {
+  margin-top: .3em;
+  margin-left: -6em;
+}
+
+header nav:first-of-type ul:nth-of-type(2) li:nth-last-of-type(2) {
+  display: flex;
+  gap: 1em;
+}
+
+header nav:first-of-type ul:nth-of-type(2) li:nth-last-of-type(2) p {
+  margin-top: .3em;
+  margin-left: -6em;
+}
+
+
+header nav:first-of-type ul:nth-of-type(2) li img {
+  height: 2em;
+}
+
+/* kruisje */
+
+header nav:first-of-type ul:nth-of-type(2) li:first-of-type button img {
+  border: 0;
+  background-color: black;
+ padding: 0;
+}
+
+header nav:first-of-type ul:nth-of-type(2) li:first-of-type button img {
+  height: 2.5em;
+  
+}
+
+header nav:first-of-type ul:nth-of-type(2) li:first-of-type {
+  margin-left: 0;
+}
+
+/*************/
+/* zoekbalk */
+/*************/
+
+nav:nth-of-type(2) {
+  background-color: var(--red-color);
+  z-index: 100;
+}
+
+nav form {
+  position: relative;
+  display: flex;
+  min-width: 10em;
+  margin-top: 3em;
+  margin-right: 1.5em;
+  height: 3.1em;
+
+  flex-grow: 1;
+}
+
+nav form a img {
+  position: absolute;
+  right: 0em;
+  top: .6em;
+
+  width: 1.8em;
+
+  z-index: 20;
+}
+
+nav form input {
+  position: absolute;
+  top: .8em;
+  left: 1em;
+  right: 1em;
+
+  height: 2em;
+  width: 100%;
+  padding: 1em;
+
+  border: 0;
+
+  flex-grow: 1;
+}
+
+nav:nth-of-type(2) a {
+  height: 1.6em;
+  
+}
+
+
+/*************/
+/*   main    */
+/*************/
+
+/*************/
+/* section 1  */
+/*************/
+
+#home main section:first-of-type {
+  position: relative;
+ 
+  /* background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 11%, rgba(180,0,25,1) 100%);  */
+  background: rgb(180,0,25);
+  background: radial-gradient(circle, rgba(180,0,25,1) 0%, rgba(55,0,0,1) 100%);
+  height: 25em;
+}
+
+
+
+#home main section:first-of-type ul:first-of-type li:first-of-type img {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+
+  height: 2.5em;
+  width: auto;
+}
+
+#home main section:first-of-type ul:first-of-type li:first-of-type p {
+  position: absolute;
+  right: .3em;
+  top: .2em;
+
+  font-family: var(--font-roboto);
+  font-size: 1.5em;
+  color: var(--white-color);
+}
+
+#home main section:first-of-type ul:first-of-type li:nth-of-type(2) p {
+  position: absolute;
+
+  font-family: var(--font-roboto);
+  font-size: 8em;
+  font-weight: 1000;
+  color: var(--white-color);
+
+  opacity: 80%;
+}
+
+#home main section:first-of-type ul:first-of-type li:nth-of-type(3) p {
+  position: absolute;
+  top: 4.5em;
+
+  font-family: var(--font-roboto);
+  font-size: 2em;
+  color: var(--white-color);
+
+  opacity: 60%;
+}
+
+#home main section:first-of-type ul:first-of-type li:nth-of-type(4) p {
+  position: absolute;
+  bottom: 2.2em;
+
+  font-family: var(--font-roboto);
+  font-size: 4em;
+  color: var(--white-color);
+  font-weight: 800;
+
+  opacity: 80%;
+}
+
+#home main section:first-of-type ul:nth-of-type(2) {
+  position: absolute;
+  bottom: 2em;
+  left: 2.5em;
+
+  width: 20em;
+  height: 6em;
+
+  background-color: var(--white-color);
+  opacity: 75%;
+
+  align-items: center;
+}
+
+#home main section:first-of-type ul:nth-of-type(2) li:first-of-type p {
+  position: absolute;
+  left: 0.5em;
+  right: 0.5em;
+
+  font-family: var(--font-roboto);
+  font-size: 1.5em;
+  font-weight: 900;
+
+}
+
+#home main section:first-of-type ul:nth-of-type(2) li:nth-of-type(2) p {
+  position: absolute;
+  bottom: 0.1em;
+  left: .5em;
+  font-family: var(--font-roboto);
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+#home main section:first-of-type ul:nth-of-type(2) li:nth-of-type(3) img {
+  position: absolute;
+  
+  height: 2.5em;
+
+  bottom: .5em;
+  right: .5em;
+}
+
+/*************/
+/* section 2 */
+/*************/
+
+/* informatie blokje */
+
+/* kerst */
+
+#home main section:nth-of-type(2) ul {
+  margin-top: 2em;
+}
+
+#home main section:nth-of-type(2) ul:first-of-type {
+  padding: 0;
+  border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+#home main section:nth-of-type(2) ul li:first-of-type {
+  display: flex;
+  
+}
+
+#home main section:nth-of-type(2) ul li:first-of-type p {
+  color: var(--green-color);
+  font-size: 1em;
+  margin-left: 1em;
+  margin-top: .2em;
+}
+
+#home main section:nth-of-type(2) ul li:first-of-type img {
+  height: 2em;
+  width: auto;
+  margin-left: 1em;
+}
+
+/* retour */
+
+#home main section:nth-of-type(2) ul li:nth-of-type(2) p {
+  font-size: .8em;
+  margin-left: 5.6em;
+  margin-right: 2em;
+  margin-top: -.5em;
+}
+
+#home main section:nth-of-type(2) ul li:nth-of-type(3) p {
+  font-size: .8em;
+  color: var(--gray-color);
+  margin-top: 1.8em;
+  margin-left: 5.6em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+
+#home main section:nth-of-type(2) ul:nth-of-type(2) {
+  margin-top: 1em;
+  border-bottom: 1px solid rgb(179, 179, 179);
+  padding: 0;
+}
+
+#home main section:nth-of-type(2) ul:nth-of-type(2) li:first-of-type p {
+  color: black;
+}
+
+#home main section:nth-of-type(2) ul:nth-of-type(2) li:last-of-type {
+  margin-bottom: 1em;
+}
+
+/* cadeaubonnen */
+
+#home main section:nth-of-type(2) ul:nth-of-type(3) {
+  margin-top: 1em;
+  padding: 0;
+}
+
+#home main section:nth-of-type(2) ul:nth-of-type(3) li:first-of-type p {
+  color: black;
+}
+
+#home main section:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(2) {
+  margin-bottom: 1em;
+}
+
+#home main section:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(2) a {
+  color: black;
+  font-size: .8em;
+  border: none;
+  margin-left: 5em;
+}
+
+/*************/
+/* section 3 */
+/*************/
+
+/* xmas deals */
+
+#home .xmas {
+  font-family: var(--font-roboto);
+  font-size: 1em;
+  font-weight: 200;
+  margin-left: 1em;
+  margin-top: 3em;
+}
+
+#home main section:nth-of-type(3) {
+  margin-top: 0em;
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  
+
+  overflow-x: scroll;
+  
+}
+
+/* algemeen */
+
+#home main section:nth-of-type(3) article {
+  flex-shrink: 0;
+  position: relative;
+  background-color: var(--red-color);
+  margin: 1em 0 1em 1em;
+  width: 17em;
+  height: 25em;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 54%, rgba(180,0,25,1) 100%);
+}
+
+#home main section:nth-of-type(3) article:nth-of-type(3) {
+  margin-right: 1em;
+} 
+
+
+#home main section:nth-of-type(3) article ul {
+  padding-left: 0;
+}
+
+#home main section:nth-of-type(3) article ul li:first-of-type h2 {
+  position: absolute;
+  top: .4em;
+  left: .4em;
+  right: 5em;
+
+  margin: 0;
+
+  font-family: var(--font-roboto);
+  font-size: 2em;
+  color: white;
+  font-weight: 800;
+  line-height: .9em;
+  
+  text-shadow: 1px 1px 5px black;
+}
+
+#home main section:nth-of-type(3) article ul li:last-of-type p {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+
+  font-family: var(--font-roboto);
+  color: white;
+
+}
+
+/* schoen foto's */
+
+#home main section:nth-of-type(3) article:first-of-type ul li:nth-of-type(2) img {
+  position: absolute;
+  top: 2em;
+  right: 3em;
+
+  width: 10em;
+  height: auto;
+}
+
+#home main section:nth-of-type(3) article:first-of-type ul li:nth-of-type(3) img {
+  position: absolute;
+  top: 3em;
+  right: 1em;
+
+  width: 10em;
+  height: auto;
+}
+
+#home main section:nth-of-type(3) article:first-of-type ul li:nth-of-type(4) img {
+  position: absolute;
+  bottom: 5em;
+  left: 4em;
+
+  width: 9em;
+  height: auto;
+}
+
+#home main section:nth-of-type(3) article:first-of-type ul li:nth-of-type(5) img {
+  position: absolute;
+  bottom: 3em;
+  left: 1em;
+
+  width: 9em;
+  height: auto;
+}
+
+/* jack photo's */
+
+#home main section:nth-of-type(3) article:nth-of-type(2) ul li:nth-of-type(2) img {
+  position: absolute;
+  top: 3em;
+  right: 1em;
+
+  width: 9em;
+  height: auto;
+}
+
+#home main section:nth-of-type(3) article:nth-of-type(2) ul li:nth-of-type(3) img {
+  position: absolute;
+  bottom: 3em;
+  left: 1em;
+
+  width: 9em;
+  height: auto;
+}
+
+/* shirt photo's */
+
+#home main section:nth-of-type(3) article:nth-of-type(3) ul li:nth-of-type(2) img {
+  position: absolute;
+  top: 4em;
+  right: .5em;
+
+  width: 12em;
+  height: auto;
+}
+
+#home main section:nth-of-type(3) article:nth-of-type(3) ul li:nth-of-type(3) img {
+  position: absolute;
+  bottom: 4em;
+  left: .5em;
+
+  width: 12em;
+  height: auto;
+}
+
+/*************/
+/* section 4 */
+/*************/
+
+#home main section:nth-of-type(4) ul {
+  display: flex;
+  
+  padding: 0;
+  margin-top: 2em;
+}
+
+#home main section:nth-of-type(4) ul li h1 {
+  font-family: var(--font-roboto);
+  font-size: 1em;
+  font-weight: 200;
+  margin-left: 1em;
+  margin-top: .3em;
+  
+}
+
+#home main section:nth-of-type(4) ul li img {
+  height: 2em;
+  width: auto;
+  margin-left: 1em;
+  
+}
+
+/*************/
+/* section 5 */
+/*************/
+
+/* algemeen */
+
+#home main section:nth-of-type(5) {
+  display: flex;
+  overflow-x: scroll;
+
+  margin-bottom: 1em;
+}
+
+#home main section:nth-of-type(5) article {
+  position: relative;
+  flex-shrink: 0;
+
+  width: 11em;
+  height: 13em;
+
+  border: 1px solid var(--red-color);
+
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+/* 1 */
+
+#home main section:nth-of-type(5) article:first-of-type ul li:first-of-type img {
+  position: absolute;
+  top: 1em;
+  left: 1.5em;
+
+  height: 9em;
+}
+
+#home main section:nth-of-type(5) article:first-of-type ul li:last-of-type p {
+  position: absolute;
+  bottom: 1em;
+  left: 3.7em;
+  
+  font-family: var(--font-roboto);
+  color: var(--gray-color);
+}
+
+/* 2 */
+
+#home main section:nth-of-type(5) article:nth-of-type(2) ul li:first-of-type img {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+
+  height: 9em;
+}
+
+#home main section:nth-of-type(5) article:nth-of-type(2) ul li:last-of-type p {
+  position: absolute;
+  bottom: 1em;
+  left: 3.7em;
+  
+  font-family: var(--font-roboto);
+  color: var(--gray-color);
+}
+
+/* 3 */
+
+#home main section:nth-of-type(5) article:nth-of-type(3) {
+  margin-right: 1em;
+}
+
+#home main section:nth-of-type(5) article:nth-of-type(3) ul li:first-of-type img {
+  position: absolute;
+  top: 1em;
+  left: 1.5em;
+
+  height: 8em;
+}
+
+#home main section:nth-of-type(5) article:nth-of-type(3) ul li:last-of-type p {
+  position: absolute;
+  bottom: 1em;
+  left: 3.7em;
+  
+  font-family: var(--font-roboto);
+  color: var(--gray-color);
+}
+
+/*************/
+/* section 6 */
+/*************/
+
+/* algemeen */
+
+#home main section:nth-of-type(6) {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr;
+
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+}
+
+#home main section:nth-of-type(6) article ul {
+  padding: 0;
+}
+
+
+#home main section:nth-of-type(6) article ul li img {
+  width: 100%;
+}
+
+#home main section:nth-of-type(6) article ul li button:hover {
+  box-shadow: 1px 1px 10px #666;
+}
+
+#home main section:nth-of-type(6) article ul li button:active {
+  background-color: var(--red-color);
+  color: white;
+}
+
+#home main section:nth-of-type(6) article ul li button:focus {
+  background-color: black;
+  color: white;     
+}
+
+#home main section:nth-of-type(6) article ul li button {
+  width: 100%;
+
+  padding: .5em;
+  margin-top: .7em;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+
+  background-color: white;
+
+  border: 1px solid black;
+  border-radius: 5px;
+
+  text-align: center;
+
+  font-family: var(--font-roboto);
+
+  transition: .5s;
+}
+
+/*************/
+/* section 7 */
+/*************/
+
+/* algemeen */
+
+#home section:nth-of-type(7) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .5em;
+  margin-top: 2em;
+  padding: 0;
+}
+
+#home section:nth-of-type(7) article {
+  position: relative;
+
+  padding: 0;
+  margin: 0;
+
+  height: 19em;
+
+  background: rgb(180,0,25);
+  background: radial-gradient(circle, rgba(180,0,25,1) 0%, rgba(55,0,0,1) 100%);
+}
+
+#home section:nth-of-type(7) article:first-of-type ul:first-of-type {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 2.5em;
+}
+
+/* iron maiden vs marvel */
+
+#home section:nth-of-type(7) article:first-of-type ul:first-of-type li:first-of-type img {
+  position: absolute;
+  left: .1em;
+  top: .7em;
+
+  width: 7.5em;
+
+  border-right: 1px solid var(--red-color);
+  padding-right: .5em;
+  margin-left: .2em;
+}
+
+#home section:nth-of-type(7) article:first-of-type ul:first-of-type li:nth-of-type(2) img {
+  position: absolute;
+  right: .5em;
+  top: .4em;
+
+  width: 4em;
+}
+
+/* shirts */
+
+#home section:nth-of-type(7) article:first-of-type ul:nth-of-type(2) li:first-of-type img {
+  position: absolute;
+  top: 3em;
+  left: .5em;
+
+  height: 6em;
+}
+
+#home section:nth-of-type(7) article:first-of-type ul:nth-of-type(2) li:nth-of-type(2) img {
+  position: absolute;
+  top: 3.5em;
+  right: .5em;
+
+  height: 6em;
+}
+
+#home section:nth-of-type(7) article:first-of-type ul:nth-of-type(2) li:nth-of-type(3) img {
+  position: absolute;
+  bottom: 5em;
+  left: .5em;
+
+  height: 6em;
+  z-index: 50;
+}
+
+#home section:nth-of-type(7) article:first-of-type ul:nth-of-type(2) li:nth-of-type(4) img {
+  position: absolute;
+  bottom: 4.5em;
+  right: .5em;
+
+  height: 6em;
+  z-index: 50;
+}
+
+#home section:nth-of-type(7) article:first-of-type ul:nth-of-type(2) li:nth-of-type(5) img {
+  position: absolute;
+  top: 5.5em;
+  left: 3.4em;
+
+  height: 6em;
+}
+
+/* text */
+
+#home section:nth-of-type(7) article:first-of-type ul:nth-of-type(3) {
+  position: absolute;
+  bottom: .7em;
+  left: .9em;
+  background-color: white;
+
+  width: 11em;
+  height: 3em;
+
+  opacity: 75%;
+
+  padding: 0;
+
+  z-index: 60;
+}
+
+#home section:nth-of-type(7) article:first-of-type ul:nth-of-type(3) li:first-of-type h1 {
+  position: absolute;
+  bottom: 1.6em;
+  left: 1em;
+
+  font-size: .9em;
+
+  font-family: var(--font-roboto);
+  background-color: white;
+  font-weight: 100;
+}
+
+#home section:nth-of-type(7) article:first-of-type ul:nth-of-type(3) li:nth-of-type(2) h2 {
+  position: absolute;
+  bottom: .3em;
+  left: 2.7em;
+  text-decoration: underline;
+
+  font-family: var(--font-roboto);
+  font-size: .9em;
+  font-weight: 100;
+}
+
+/* harry potter merch */
+
+#home section:nth-of-type(7) article:nth-of-type(2) ul:first-of-type {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 2.5em;
+}
+
+#home section:nth-of-type(7) article:nth-of-type(2) ul:first-of-type li img {
+  position: absolute;
+  top: -.5em;
+  left: 2.1em;
+  
+  height: 3.5em;
+
+}
+
+/* robes */
+
+#home section:nth-of-type(7) article:nth-of-type(2) ul:nth-of-type(2) li img {
+  position: absolute;
+  height: 10em;
+}
+
+#home section:nth-of-type(7) article:nth-of-type(2) ul:nth-of-type(2) li:first-of-type img {
+  top: 4em;
+  left: 1em;
+}
+
+#home section:nth-of-type(7) article:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(2) img {
+  bottom: 4em;
+  right: 1em;
+}
+
+/* tekst */
+
+#home section:nth-of-type(7) article:nth-of-type(2) ul:nth-of-type(3) {
+  position: absolute;
+  bottom: .7em;
+  left: .9em;
+  background-color: white;
+
+  width: 11em;
+  height: 3em;
+
+  opacity: 75%;
+
+  padding: 0;
+
+  z-index: 60;
+}
+
+#home section:nth-of-type(7) article:nth-of-type(2) ul:nth-of-type(3) li:first-of-type h1 {
+  position: absolute;
+  bottom: 1.6em;
+  left: 1em;
+
+  font-size: .9em;
+
+  font-family: var(--font-roboto);
+  background-color: white;
+  font-weight: 100;
+}
+
+#home section:nth-of-type(7) article:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(2) h2 {
+  position: absolute;
+  bottom: .3em;
+  left: 2.7em;
+  text-decoration: underline;
+
+  font-family: var(--font-roboto);
+  font-size: .9em;
+  font-weight: 100;
+}
+
+
+/* footer */
+
+footer section:first-of-type ul:first-of-type {
+  padding: 0;
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid var(--light-gray-color);
+}
+
+footer section:first-of-type ul:first-of-type li {
+  margin-left: .5em;
+}
+
+footer section:first-of-type ul:first-of-type li:first-of-type p {
+  font-family: var(--font-roboto);
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+footer section:first-of-type ul:first-of-type li:nth-of-type(2) p {
+  font-family: var(--font-roboto);
+  font-size: .8em;
+}
+
+footer section:first-of-type ul:first-of-type li:nth-of-type(3) button {
+  font-family: var(--font-roboto);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: .5em 1em .5em 1em;
+  background-color: var(--even-lighter-gray);
+  border: none;
+  transition: .5s;
+}
+
+footer section:first-of-type ul:first-of-type li:nth-of-type(3) button:hover {
+  background-color: var(--light-gray-color);
+  box-shadow: 1px 1px 5px var(--even-lighter-gray);
+}
+
+footer section:first-of-type ul:first-of-type li:nth-of-type(3) button:active {
+  background-color: var(--gray-color);
+  color: white;
+}
+
+footer section:first-of-type ul:nth-of-type(2) {
+  display: flex;
+  margin: 1em 0 1em .5em;
+  gap: 1em;
+  padding: 0;
+}
+
+footer section:first-of-type ul:nth-of-type(2) li img {
+  height: 3em;
+}
+
+footer section:first-of-type {
+  border-bottom: 1px solid var(--even-lighter-gray);
+}
+
+/* e-mail nieuwsbrief uitklap menu */
+
+/* label */
+
+footer section:nth-of-type(2) {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid var(--even-lighter-gray);
+}
+
+footer section:nth-of-type(2) details {
+  padding: 0;
+  margin-left: .5em;
+  font-family: var(--font-roboto);
+}
+
+footer section:nth-of-type(2) details summary h1 {
+  font-size: .8em;
+  font-weight: 100;
+}
+
+footer section:nth-of-type(2) details summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer section:nth-of-type(2) details summary {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+footer section:nth-of-type(2) details summary img {
+  margin-top: -.6em;
+  height: 2em;
+  opacity: 60%;
+}
+
+/* inhoud */
+
+footer section:nth-of-type(2) details p:first-of-type {
+  font-size: .8em;
+}
+
+footer section:nth-of-type(2) details p:nth-of-type(2) {
+  position: absolute;
+
+  background-color: var(--red-color);
+  color: var(--white-color);
+  border-radius: 100px;
+  left: 22em;
+
+  padding-top: 1em;
+  font-size: .9em;
+  text-align: center;
+
+  height: 5em;
+  width: 5em;
+}
+
+footer section:nth-of-type(2) details p:nth-of-type(3) {
+  color: var(--gray-color);
+
+  margin: 1em 0 0 0;
+  font-size: .8em;
+  width: 70%;
+}
+
+footer section:nth-of-type(2) details button {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: .5em 1em .5em 1em;
+  background-color: var(--even-lighter-gray);
+  border: none;
+  transition: .5s;
+}
+
+footer section:nth-of-type(2) details button:hover {
+  background-color: var(--light-gray-color);
+  box-shadow: 1px 1px 5px var(--even-lighter-gray);
+}
+
+footer section:nth-of-type(2) details button:active {
+  background-color: var(--gray-color);
+  color: white;
+}
+
+/* Over Large */
+
+footer section:nth-of-type(3) {
+  margin: 1em 0 1em 0;
+  border-bottom: 1px solid var(--even-lighter-gray);
+}
+
+footer section:nth-of-type(3) ul:first-of-type {
+  padding: 0;
+}
+
+footer section:nth-of-type(3) ul:first-of-type li p {
+  font-family: var(--font-roboto);
+  font-size: 1.1em;
+
+  margin-left: .5em;
+  margin-bottom: 1em;
+}
+
+footer section:nth-of-type(3) ul:nth-of-type(2) {
+  padding: 0;
+  margin-left: .5em;
+  columns: 2;
+}
+
+footer section:nth-of-type(3) ul:nth-of-type(2) li {
+  font-family: var(--font-roboto);
+  font-size: .9em;
+  font-weight: 100;
+
+  margin-bottom: 1em;
+}
+
+/* wmg company logo */
+
+footer section:nth-of-type(4) {
+  border-bottom: 1px solid var(--even-lighter-gray);
+  margin-bottom: 1em;
+}
+
+footer section:nth-of-type(4) ul {
+  padding: 0;
+  margin: 1em 0 1em .5em;
+  
+}
+
+footer section:nth-of-type(4) ul li:first-of-type img {
+  height: 5em;
+  margin-left: 0.5em;
+  margin-bottom: 1em;
+}
+
+footer section:nth-of-type(4) ul li:nth-of-type(2) p {
+  font-family: var(--font-roboto);
+  color: var(--gray-color);
+  font-size: .9em;
+}
+
+footer section:nth-of-type(4) ul li:nth-of-type(3) p {
+  font-family: var(--font-roboto);
+  color: var(--gray-color);
+  font-size: .9em;
+}
+
+/* inlogpagina */   
+
+/* inloggen + profielfoto */
+
+#inlogpagina main section:first-of-type ul {
+  display: flex;
+
+  padding: 0;
+}
+
+#inlogpagina main section:first-of-type ul li p {
+  font-family: var(--font-roboto);
+  margin-top: .3em;
+}
+
+#inlogpagina main section:first-of-type ul li img {
+  margin-right: .5em;
+}
+
+
+/* inlogformulier */
+
+#inlogpagina body {
+  background-color: black;
+}
+
+#inlogpagina main section:first-of-type {
+  margin: 1em 0 1em .5em; 
+}
+
+#inlogpagina main section:first-of-type form {
+  margin-right: .5em;
+}
+
+#inlogpagina main section:first-of-type form input {
+  padding: .5em 0 .5em 1em;
+  width: 100%;
+  margin: .5em 0em 1em 0;
+
+  border: 1px solid var(--light-gray-color);
+
+  font-family: var(--font-roboto);
+
+  transition: .5s;
+}
+
+#inlogpagina main section:first-of-type form input:hover {
+  border: 1px solid var(--red-color);
+}
+
+/* inloggen knop */
+
+#inlogpagina main section:first-of-type form button:first-of-type {
+  width: 100%;
+
+  color: white;
+  font-family: var(--font-roboto);
+  font-size: 1em;
+  padding: .5em 0 .5em 0;
+
+  border: none;
+  border-radius: 3px;
+  border-bottom: 2px solid var(--dark-green-color);
+
+  background-color: var(--green-color);
+  
+  margin-bottom: 1em;
+}
+
+#inlogpagina main section:first-of-type form button:first-of-type:hover {
+  background-color: var(--dark-green-color);
+  border-bottom: 2px solid var(--dark-green-color);
+  
+}
+
+#inlogpagina main section:first-of-type form button:first-of-type:active {
+  box-shadow: 1px 1px 5px black;
+}
+
+#inlogpagina main section:first-of-type form a {
+  margin-bottom: 1em;
+  font-family: var(--font-roboto);
+  font-size: .9em;
+  color: black;
+  text-align: right;
+}
+
+/* inloggen met google en facebook */
+
+#inlogpagina main section:first-of-type ul:nth-of-type(2) {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  padding: 0;
+  margin-top: 1em;
+  margin-right: .5em;
+}
+
+#inlogpagina main section:first-of-type ul:nth-of-type(2) li button {
+  transition: .5s;
+  width: 11.5em;
+
+  display: flex;
+
+  text-align: center;
+}
+
+#inlogpagina main section:first-of-type ul:nth-of-type(2) li:first-of-type button {
+  font-family: var(--font-roboto);
+  font-size: 1em;
+
+  background-color: white;
+
+  border: .5px solid black;
+  border-radius: 3px;
+}
+
+#inlogpagina main section:first-of-type ul:nth-of-type(2) li:first-of-type button img {
+  height: 2em;
+}
+
+
+
+#inlogpagina main section:first-of-type ul:nth-of-type(2) li:first-of-type button:hover {
+  box-shadow: 1px 1px 5px var(--even-lighter-gray);
+}
+
+#inlogpagina main section:first-of-type ul:nth-of-type(2) li:first-of-type button:active {
+  box-shadow: 1px 1px 5px var(--gray-color);
+}
+
+#inlogpagina main section:first-of-type ul:nth-of-type(2) li:nth-of-type(2) button {
+  font-family: var(--font-roboto);
+  font-size: 1em;
+  color: white;
+
+  background-color: #4267b2;
+  border: 1px solid #294eb2;
+  border-radius: 3px;
+}
+
+#inlogpagina main section:first-of-type ul:nth-of-type(2) li:nth-of-type(2) button img {
+  height: 2em;
+  padding: 0;
+}
+
+#inlogpagina main section:first-of-type ul:nth-of-type(2) li:nth-of-type(2) button:hover {
+  background-color: #294eb2;
+}
+
+#inlogpagina main section:first-of-type ul:nth-of-type(2) li:nth-of-type(2) button:active {
+  background-color: #294eb2;
+  box-shadow: 1px 1px 5px black;
+}
+
+/* nieuwe klanten */
+
+#inlogpagina main section:nth-of-type(2) {
+  margin-top: 1em;
+  border-top: 1px solid var(--even-lighter-gray);
+}
+
+#inlogpagina main section:nth-of-type(2) ul:first-of-type {
+  margin-top: .5em;
+  margin-left: .5em;
+  margin-right: .5em;
+  font-family: var(--font-roboto);
+  padding: 0;
+}
+
+#inlogpagina main section:nth-of-type(2) ul:first-of-type li:first-of-type p {
+  font-size: .8em;
+  color: var(--gray-color);
+
+  text-align: center;
+}
+
+#inlogpagina main section:nth-of-type(2) ul:first-of-type li:nth-of-type(2) button {
+  width: 100%;
+
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  font-family: var(--font-roboto);
+  font-size: 1em;
+  color: black;
+  background-color: var(--even-lighter-gray);
+  padding: .5em 0 .5em 0;
+  border: none;
+
+  transition: .5s;
+}
+
+#inlogpagina main section:nth-of-type(2) ul:first-of-type li:nth-of-type(2) button:hover {
+  background-color: var(--light-gray-color);
+  box-shadow: 1px 1px 5px var(--even-lighter-gray);
+}
+
+
+#inlogpagina main section:nth-of-type(2) ul:first-of-type li:nth-of-type(2) button:active {
+  background-color: var(--gray-color);
+  color: white;
+}
+
+/* voordelen large acc */
+
+#inlogpagina main section:nth-of-type(2) ul:nth-of-type(2) {
+  padding: 0;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+#inlogpagina main section:nth-of-type(2) ul:nth-of-type(2) li:first-of-type p {
+  font-family: var(--font-roboto);
+  font-size: 1em;
+  margin-bottom: .5em;
+}
+
+#inlogpagina main section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(2) p {
+  font-family: var(--font-roboto);
+  font-size: .8em;
+  margin-bottom: .5em;
+}
+#inlogpagina main section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(3) p {
+  font-family: var(--font-roboto);
+  font-size: .8em;
+  margin-bottom: .5em;
+}
+
+#inlogpagina main section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(4) p {
+  font-family: var(--font-roboto);
+  font-size: .8em;
+  margin-bottom: .5em;
+}
