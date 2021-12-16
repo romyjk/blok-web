@@ -44,8 +44,10 @@ hier de naam van de pagina
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/productdetail.png" width="375px" alt="omschrijving van de pagina">
+Het was eerst het plan dat ik deze pagina zou doen, maar aangezien ik in tijdnood kwam is me dit nog niet gelukt.
  
+<img src="images/loginpage" width="375px" alt="omschrijving van de pagina">
 </details>
 
 
